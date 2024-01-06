@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>About- Vedashri Marichetty</title>
+    <link href="about.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link active" href="main_page1.html">Home</a></li>
+                    <li><a class="nav-link" href="#header">About</a></li>
+                    <li><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <fieldset>
+        <legend><b>Photo</b></legend>
+        <img src="photo">
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend><b>Education</b></legend>
+        <table>
+            <tr>
+                <th>Sl.no</th>
+                <th>Education</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>10th</td>
+                <td>86%</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>12th</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Btech(Hons)</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Masters</td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend><b>Skills</b></legend>
+        <div class="progress">
+            <span class="skill">HTML <i class="val" id="progress-value-html">0%</i></span>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar" id="progress-bar-html" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="progress">
+            <span class="skill">CSS <i class="val" id="progress-value-css">0%</i></span>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar" id="progress-bar-css" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+        </div>
+
+        <div class="progress">
+            <span class="skill">JavaScript <i class="val" id="progress-value-js">0%</i></span>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar" id="progress-bar-js" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+        </div>
+    </fieldset><br><br>
+
+    <script>
+        // JavaScript to dynamically update the progress bars
+        function updateProgressBar(skill, value) {
+            var progressBar = document.getElementById("progress-bar-" + skill);
+            var progressValue = document.getElementById("progress-value-" + skill);
+
+            // Update the progress bar and value
+            progressBar.style.width = value + "%";
+            progressValue.textContent = value + "%";
+        }
+
+        // Set initial progress values (change these values as needed)
+        var initialProgressHTML = 75;
+        var initialProgressCSS = 50;
+        var initialProgressJS = 25;
+
+        // Update progress bars
+        updateProgressBar("html", initialProgressHTML);
+        updateProgressBar("css", initialProgressCSS);
+        updateProgressBar("js", initialProgressJS);
+    </script>
+    <fieldset>
+        <legend><b>Experience</b></legend>
+        <table>
+            <tr>
+                <th>sl.no</th>
+                <th>Company</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset><br><br>
+    <fieldset>
+        <legend><b>References</b></legend>
+        <table>
+            <tr>
+                <th>sl.no</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone no</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset>
+
+</body>
+
+</html>
