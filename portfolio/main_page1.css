@@ -3,13 +3,15 @@ body {
     background-color: #040404;
     color: #fff;
     position: relative;
-    background: transparent;
+    background: url('Premium\ Vector\ _\ Abstract\ 3D\ elegant\ gold\ and\ black\ curved\ wave\ lines\ with\ shiny\ sparkling\ light\ on\ dark\ background\ luxury\ style.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center; /* Center the text */
 }
 
 body::before {
     content: "";
     position: fixed;
-    background: #040404;
+    background: url('Premium\ Vector\ _\ Abstract\ 3D\ elegant\ gold\ and\ black\ curved\ wave\ lines\ with\ shiny\ sparkling\ light\ on\ dark\ background\ luxury\ style.jpg') no-repeat center center fixed;
     background-size: cover;
     left: 0;
     right: 0;
@@ -31,7 +33,9 @@ body::before {
     position: relative;
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Center the text vertically */
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
     z-index: 997;
     overflow-y: auto;
 }
@@ -47,11 +51,12 @@ body::before {
     line-height: 1;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
+    color: white; /* Gold color for better visibility */
 }
 
 #header h1 a,
 #header h1 a:hover {
-    color: rgb(157, 185, 237);
+    color: white; /* Gold color for better visibility */
     line-height: 1;
     display: inline-block;
 }
@@ -59,11 +64,11 @@ body::before {
 #header h2 {
     font-size: 24px;
     margin-top: 20px;
-    color: darkblue;
+    color: white; /* Gold color for better visibility */
 }
 
 #header h2 span {
-    color: blue;
+    color: white; /* Gold color for better visibility */
     border-bottom: 2px solid black;
     padding-bottom: 6px;
 }
@@ -76,6 +81,7 @@ body::before {
 #header .social-links {
     margin-top: 40px;
     display: flex;
+    justify-content: center; /* Center the social links */
 }
 
 #header .social-links a {
@@ -171,6 +177,7 @@ body::before {
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content: center; /* Center the navbar items */
 }
 
 .navbar li {
@@ -190,7 +197,7 @@ body::before {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: rgb(255, 92, 92);
+    color: white; /* Gold color for better visibility */
     white-space: nowrap;
     transition: 0.3s;
 }
